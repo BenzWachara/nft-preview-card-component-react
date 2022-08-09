@@ -1,0 +1,163 @@
+:root{
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --border-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1{
+  color: var(--white);
+  font-size: 1.5rem;
+}
+p{
+  font-size: 16px;
+  color: var(--soft-blue);
+}
+
+body{
+  display:flex;
+  font-family: 'Outfit', sans-serif;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color:var(--main-background);
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--card-background);
+  max-width: 20.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.img-hover{
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.img-card{
+  display: block;
+}
+
+.eye-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 0.509);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+
+.img-hover:hover .eye-overlay{
+  opacity: 1;
+}
+
+.eye-overlay{
+  opacity: 0;
+}
+
+.img-eye{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-card{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-card{
+  margin-top: 0.8em;
+}
+
+.description{
+  margin:12px 0px 16px 0px;
+}
+
+.avatar-name{
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-line);
+  display:flex;
+  align-items:center;
+}
+
+.eth-number p{
+  color:var(--cyan)
+}
+
+.eth-time {
+  display: flex;
+  padding-bottom: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eth-time li {
+  padding: 5px 0px 5px 0px;
+}
+.eth-time li img{
+  height: 20px;
+}
+
+
+.eth-number p{
+  padding-left:0.5em;
+}
+.time-clock p{
+  padding-left:0.5em;
+}
+
+.avatar-img{
+  width:15%;
+  border: 1px solid var(--white);
+  border-radius:50%;
+}
+
+.caption{
+  padding-left: 1em;
+}
+
+figcaption{
+  color:var(--soft-blue);
+}
+
+li{
+  display: flex;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a{
+  color: var(--white);
+}
+a:hover{
+  color: var(--cyan);
+}
